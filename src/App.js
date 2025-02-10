@@ -22,6 +22,12 @@ import AgentsDetails from './pages/AgentsDetails';
 import Agencies from './pages/Agencies';
 import AgenciesDetails from './pages/AgenciesDetails';
 import Contact from './pages/Contact';
+import HomeLoanProcess from './pages/HomeLoanProcess';
+import Faq from './pages/Faq';
+import { Career } from './pages/Career';
+import Dashboard from './pages/Dashboard';
+import Blog from './pages/Blog';
+import BlogDetails from './pages/BlogDetails';
 
 function App() {
   
@@ -35,6 +41,12 @@ function App() {
       <Route path="/pages/agencies" element={<Agencies />} />
       <Route path="/pages/agencies-details" element={<AgenciesDetails />} />
       <Route path="/contact" element={<Contact />} />
+      <Route path="/home-loan-process" element={<HomeLoanProcess />} />
+      <Route path="/career" element={<Career />} />
+      <Route path="/faqs" element={<Faq />} />
+      <Route path="/dashboard" element={<Dashboard />} />
+      <Route path="/blog" element={<Blog />} />
+      <Route path="/blog-details" element={<BlogDetails />} />
       
       
     </Routes>

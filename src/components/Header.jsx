@@ -45,16 +45,24 @@ export const Header = () => {
                                                         </li>
                                                     </ul>
                                                 </li>
-                                                <li><a href="home-loan-process.html">Home Loan Process</a></li>
-                                                <li><a href="career.html">Career</a></li>
-                                                <li><a href="faq.html">Faq's</a></li>
-                                                <li><a href="dashboard.html">Dashboard</a></li>
+                                                <li>
+                                                    <Link to="/home-loan-process">Home Loan Process</Link>
+                                                </li>
+
+
+                                                <li>
+                                                    <Link to="/career">Career</Link>
+                                                </li>
+                                                <li>
+                                                    <Link to="/faqs">Faq's</Link>
+                                                    </li>
+                                                <li><Link to="/dashboard">Dashboard</Link></li>
                                             </ul>
                                         </li>
                                         <li className="has-child "><a href="#">Blog</a>
                                             <ul className="submenu">
-                                                <li><a >Blog List</a></li>
-                                                <li><a >Blog Detail</a></li>
+                                                <li><Link to="/blog" >Blog List</Link></li>
+                                                <li><Link to="/blog-details" >Blog Detail</Link></li>
                                             </ul>
                                         </li>
                                         <li><Link to="/contact">Contact</Link></li>
