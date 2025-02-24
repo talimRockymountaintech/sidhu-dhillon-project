@@ -82,8 +82,7 @@ export const Header = () => {
                                         </div>
                                         <p>(603) 555-0123</p>
                                     </div>
-                                    <div className="box-user tf-action-btns">
-                                        <div className="user ">
+                                    <div className="user ">
                                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg">
                                                 <path
@@ -92,6 +91,8 @@ export const Header = () => {
                                                     strokeLinejoin="round" />
                                             </svg>
                                         </div>
+                                    {/* <div className="box-user tf-action-btns">
+                                       
                                         <div className="name">
                                             Themesflat
                                             <i className="icon-CaretDown"></i>
@@ -294,7 +295,7 @@ export const Header = () => {
                                                 </svg>
                                                 Logout</a>
                                         </div>
-                                    </div>
+                                    </div> */}
                                     <div className="btn-add">
                                         <a className="tf-btn style-border pd-23" href="add-property.html">Add property</a>
                                     </div>

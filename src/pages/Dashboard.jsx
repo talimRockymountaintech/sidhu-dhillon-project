@@ -3,6 +3,7 @@ import DashboarsSidebar from '../components/DashboarsSidebar'
 
 const Dashboard = () => {
   return (
+    <>
     <div id="wrapper" class="bg-4 ">
       <div class="page-layout">
 
@@ -671,6 +672,8 @@ const Dashboard = () => {
 
       </div>
     </div>
+      
+   </>
   )
 }
 
