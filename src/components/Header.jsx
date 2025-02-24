@@ -297,7 +297,7 @@ export const Header = () => {
                                         </div>
                                     </div> */}
                                     <div className="btn-add">
-                                        <a className="tf-btn style-border pd-23" href="add-property.html">Add property</a>
+                                    <Link className="tf-btn style-border pd-23" to="/dashboard/add-property">Add Property</Link>
                                     </div>
                                     <div className="mobile-button" data-bs-toggle="offcanvas" data-bs-target="#menu-mobile"
                                         aria-controls="menu-mobile">
