@@ -8,7 +8,8 @@ const DashboarsSidebar = () => {
                 <div class="menu-box">
                     <ul class="box-menu-dashboard">
                         <li class="nav-menu-item active">
-                            <a class="nav-menu-link" href="dashboard.html">
+                           
+                            <Link class="nav-menu-link" to="/dashboard">
                                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path
@@ -29,7 +30,8 @@ const DashboarsSidebar = () => {
                                         stroke-linejoin="round" />
                                 </svg>
                                 Dashboards
-                            </a>
+                                </Link>
+                            
                         </li>
                         <li class="nav-menu-item">
                             <Link class="nav-menu-link" to="/dashboard/my-profile">
