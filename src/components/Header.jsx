@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 
 export const Header = () => {
     return (
@@ -10,15 +10,15 @@ export const Header = () => {
                         <div className="col-12">
                             <div className="header-inner-wrap">
                                 <div className="header-logo">
-                                    <Link to="/" className="site-logo"><img id="logo_header" alt="" src="images/logo/logo%402x.png" /></Link>
+                                    <NavLink to="/" className="site-logo"><img id="logo_header" alt="" src="images/logo/logo%402x.png" /></NavLink>
                                 </div>
                                 <nav className="main-menu">
                                     <ul className="navigation ">
-                                        <li className="has-child current-menu">
-                                            <Link to="/">Home</Link>
+                                        <li className="has-child" >
+                                            <NavLink to="/" className={({ isActive }) => (isActive ? "current-menu" : "")}>Home</NavLink>
                                         </li>
                                         <li className="has-child style-2">
-                                            <Link to="/listing">Listing</Link>
+                                            <NavLink to="/listing" className={({ isActive }) => (isActive ? "current-menu" : "")} >Listing</NavLink>
                                         </li>
                                         <li className="has-child"><a href="#">Pages</a>
                                             <ul className="submenu">
@@ -26,46 +26,46 @@ export const Header = () => {
                                                     <a href="#">Agents</a>
                                                     <ul className="submenu">
                                                         <li>
-                                                            <Link to="/pages/agents">Agents</Link>
+                                                            <NavLink to="/pages/agents" className={({ isActive }) => (isActive ? "current-menu" : "")} >Agents</NavLink>
                                                         </li>
                                                         <li>
-                                                            <Link to="/pages/agents-details">Agents Details</Link>
+                                                            <NavLink to="/pages/agents-details" className={({ isActive }) => (isActive ? "current-menu" : "")}>Agents Details</NavLink>
                                                         </li>
                                                     </ul>
                                                 </li>
                                                 <li className="has-child"><a href="#">Agencies</a>
                                                     <ul className="submenu">
                                                         <li>
-                                                            <Link to="/pages/agencies">Agencies List</Link>
+                                                            <NavLink to="/pages/agencies" className={({ isActive }) => (isActive ? "current-menu" : "")} >Agencies List</NavLink>
                                                         </li>
 
                                                         <li>
-                                                            <Link to="/pages/agencies-details">Agencies
-                                                                Details</Link>
+                                                            <NavLink to="/pages/agencies-details" className={({ isActive }) => (isActive ? "current-menu" : "")} >Agencies
+                                                                Details</NavLink>
                                                         </li>
                                                     </ul>
                                                 </li>
                                                 <li>
-                                                    <Link to="/home-loan-process">Home Loan Process</Link>
+                                                    <NavLink to="/home-loan-process" className={({ isActive }) => (isActive ? "current-menu" : "")} >Home Loan Process</NavLink>
                                                 </li>
 
 
                                                 <li>
-                                                    <Link to="/career">Career</Link>
+                                                    <NavLink to="/career" className={({ isActive }) => (isActive ? "current-menu" : "")} >Career</NavLink>
                                                 </li>
                                                 <li>
-                                                    <Link to="/faqs">Faq's</Link>
+                                                    <NavLink to="/faqs" className={({ isActive }) => (isActive ? "current-menu" : "")} >Faq's</NavLink>
                                                     </li>
-                                                <li><Link to="/dashboard">Dashboard</Link></li>
+                                                <li><NavLink to="/dashboard" className={({ isActive }) => (isActive ? "current-menu" : "")} >Dashboard</NavLink></li>
                                             </ul>
                                         </li>
                                         <li className="has-child "><a href="#">Blog</a>
                                             <ul className="submenu">
-                                                <li><Link to="/blog" >Blog List</Link></li>
-                                                <li><Link to="/blog-details" >Blog Detail</Link></li>
+                                                <li><NavLink to="/blog" className={({ isActive }) => (isActive ? "current-menu" : "")} >Blog List</NavLink></li>
+                                                <li><NavLink to="/blog-details" className={({ isActive }) => (isActive ? "current-menu" : "")} >Blog Detail</NavLink></li>
                                             </ul>
                                         </li>
-                                        <li><Link to="/contact">Contact</Link></li>
+                                        <li><NavLink to="/contact" className={({ isActive }) => (isActive ? "current-menu" : "")} >Contact</NavLink></li>
                                     </ul>
                                 </nav>
                                 <div className="header-right">

@@ -1437,7 +1437,7 @@ a:hover, a:focus {
   display: flex;
   gap: 14px;
 }
-.main-menu .navigation > li.current-menu > a {
+.main-menu .navigation > li > .current-menu {
   color: var(--Primary) !important;
   font-weight: 700;
 }
